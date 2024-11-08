@@ -25,42 +25,135 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 header_col1">
+            <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 header_col1">
                 <img onclick="window.location.href='index.html'" src="img/logo.png" alt="">
             </div>
-            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-0 col-0 header_col2">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="treatments.html">Treatments</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact Us</a>
+            <div class="col-xl-10 col-lg-10 col-md-10 col-sm-0 col-0 header_col2">
+                <a class="navItems" href="index.html">Home</a>
+                <a class="navItems" href="about.html">About</a>
+                <a class="navItems" href="treatments.html">Treatments</a>
+                <a class="navItems" href="gallery.html">Gallery</a>
+                <a class="navItems" href="contact.html">Contact Us</a>
                 <button class="button_1">
                     Book Appointment
                 </button>
             </div>
-            <div class="col-xl-0 col-lg-0 col-md-0 col-sm-6 col-6 header_col3">
-                <a><i onclick="hamburgerToggle()" class="fa-solid fa-bars"></i></a>
+            <div class="col-xl-0 col-lg-0 col-md-10 col-sm-6 col-6 header_col3">
+                <a><i id="hamburger" onclick="hamburgerToggle()" class="fa-solid fa-bars"></i></a>
             </div>
         </div>
         <div id="mobileMenu" class="mobile_menu">
             <ul>
-                <li class="mobile_item"><a href="index.html">Home</a></li>
-                <li class="mobile_item"><a href=" about.html">About</a></li>
-                <li class="mobile_item"><a href="portfolio.html">Portfolio</a></li>
+                <br>
+                <li class="mobile_item"><a href="index.html">Home</a></li><br>
+                <li class="mobile_item"><a href=" about.html">About</a></li><br>
+                <li class="mobile_item"><a href="portfolio.html">Portfolio</a></li><br>
                 <li class="mobile_item"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
 
     <section class="hero">
-        <br><br><br><br><br><br><br><br><br><br>
-
+        <div class="hero_content_container">
+            <h2>
+                Care That Feels Like Family
+            </h2>
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit es
+                cillum dolore eu fugiat nulla pariatur excepteur sint occae
+                cupidatat non proident.
+            </p>
+            <button class="button_1">
+                OUR SERVICES
+            </button>
+        </div>
     </section>
 
+    <section class="card_strip_1">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 card_strip_1_col">
+                <div class="card_1">
+                    <h5>
+                        Drug-Free Treatments
+                    </h5>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volu.
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 card_strip_1_col">
+                <div class="card_1">
+                    <h5>
+                        Lifestyle Guidance
+                    </h5>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volu.
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 card_strip_1_col">
+                <div class="card_1">
+                    <h5>
+                        Chronic Disease Management
+                    </h5>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volu.
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 card_strip_1_col">
+                <div class="card_1">
+                    <h5>
+                        Detoxification Focus
+                    </h5>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in volu.
+                    </p>
+                    <a href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="js/hambugerToggle.js"></script>
+    <section class="home_counter">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="counter_card">
+                    <h4 data-target="40">0</h4>
+                    <p>Donations Every Year</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="counter_card">
+                    <h4 data-target="381">0</h4>
+                    <p>Face to Face Visits</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="counter_card">
+                    <h4 data-target="149">0</h4>
+                    <p>Organised Local Events</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="counter_card">
+                    <h4 data-target="40">0</h4>
+                    <p>Donations Every Year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
