@@ -1,4 +1,4 @@
-*{
+* {
     font-family: "Poppins", serif;
 }
 
@@ -7,10 +7,14 @@ body {
     padding: 0;
 }
 
-.row{
+.row {
     width: 100%;
     padding: 0;
     margin: 0;
+}
+
+.active {
+    color: #04A57F;
 }
 
 
@@ -66,7 +70,7 @@ body {
 
 .header_col2 a:hover {
     color: #04A57F !important;
-  }
+}
 
 .header_col3 {
     display: flex;
@@ -74,7 +78,7 @@ body {
     justify-content: end;
 }
 
-.header_col3{
+.header_col3 {
     color: #fff;
 }
 
@@ -132,7 +136,7 @@ body {
 
 
 
-.hero{
+.hero {
     width: 100%;
     height: max-content;
     background-image: url(../img/hero_bg.jpg);
@@ -145,7 +149,7 @@ body {
     overflow: hidden;
 }
 
-.hero_content_container{
+.hero_content_container {
     width: 100%;
     height: 100%;
     color: #fff;
@@ -156,18 +160,18 @@ body {
     padding-bottom: 10%;
 }
 
-.hero_content_container h2{
+.hero_content_container h2 {
     font-size: 400%;
     font-weight: 600;
     /* width: 50%; */
 }
 
-.hero_content_container p{
+.hero_content_container p {
     /* width: 50%; */
 }
 
 @media (max-width: 992px) {
-    .hero_content_container{
+    .hero_content_container {
         padding-left: 10%;
         padding-right: 25%;
         padding-top: 15%;
@@ -176,42 +180,44 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hero_content_container{
+    .hero_content_container {
         padding-left: 10%;
         padding-right: 15%;
         padding-top: 20%;
         padding-bottom: 10%;
     }
 
-    .hero_content_container h2{
+    .hero_content_container h2 {
         font-size: 300%
     }
 }
+
 @media (max-width: 576px) {
-    .hero_content_container{
+    .hero_content_container {
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 25%;
         padding-bottom: 15%;
     }
 
-    .hero_content_container h2{
+    .hero_content_container h2 {
         font-size: 300%
     }
-    
-    .hero_content_container p{
+
+    .hero_content_container p {
         text-align: justify;
     }
 }
+
 @media (max-width: 415px) {
-    .hero_content_container{
+    .hero_content_container {
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 25%;
         padding-bottom: 15%;
     }
 
-    .hero_content_container h2{
+    .hero_content_container h2 {
         font-size: 200%
     }
 }
@@ -229,7 +235,7 @@ body {
 
 
 
-.card_strip_1{
+.card_strip_1 {
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
@@ -237,11 +243,11 @@ body {
     padding-bottom: 40px;
 }
 
-.card_strip_1_col{
+.card_strip_1_col {
     margin-bottom: 30px;
 }
 
-.card_1{
+.card_1 {
     width: 100%;
     height: 100%;
     padding-left: 10%;
@@ -257,12 +263,12 @@ body {
     justify-content: space-between;
 }
 
-.card_1 a{
+.card_1 a {
     text-decoration: none;
     color: #04A57F;
 }
 
-.card_1 h5{
+.card_1 h5 {
     font-size: 150%;
     font-weight: 600;
 }
@@ -282,7 +288,7 @@ body {
 
 
 
-.home_counter{
+.home_counter {
     width: 100%;
     height: max-content;
     padding-left: 10%;
@@ -291,7 +297,7 @@ body {
     padding-bottom: 40px;
 }
 
-.counter_card{
+.counter_card {
     width: 100%;
     height: 100%;
     padding-left: 10%;
@@ -310,8 +316,75 @@ body {
     justify-content: space-between;
 }
 
-.counter_card h4{
+.counter_card h4 {
     transition: all 0.3s ease;
     font-size: 200%;
     font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.why_choose_us {
+    width: 100%;
+    height: max-content;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* padding-top: 40px; */
+    padding-bottom: 40px;
+}
+
+.why_choose_us_col_1 img {
+    width: 60%;
+    float: right;
+}
+
+.why_choose_us_col_2 h3 {
+    font-size: 300%;
+    font-weight: 600;
+}
+
+.card_2{
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        box-shadow: 0px 0px 20px 6px #04a57f30;
+        border-radius: 10px;
+        margin-bottom: 20px;
+}
+
+.card_2 img{
+    width: 20%;
+    height: 20%;
+}
+
+.card_2_content{
+    padding-left: 10px;
+}
+
+.card_2_content p{
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .why_choose_us_col_1 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .why_choose_us_col_1 {
+        display: none;
+    }
 }
