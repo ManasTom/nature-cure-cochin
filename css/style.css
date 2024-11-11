@@ -10,7 +10,7 @@ body {
 .row {
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .active {
@@ -37,6 +37,7 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 10px;
+    padding-bottom: 10px;
     /* box-shadow: 0px 11px 20px 6px #00000063; */
     z-index: 10;
     border-bottom-left-radius: 10px;
@@ -334,17 +335,128 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+.consultation_form_section {
+    width: 100%;
+    height: max-content;
+    background-color: #F3F3F3;
+
+}
+
+.consultation_form_section_col1_content{
+    width: 100%;
+    height: max-content;
+    padding-left: 20%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.consultation_form_section_col1 h3 {
+    font-size: 300%;
+    font-weight: 600;
+}
+
+.consultation_form_section_col1 p {
+    font-weight: 500;
+}
+
+.home_checklist i {
+    color: #04A57F;
+}
+
+.home_checklist p {
+    color: #000;
+    font-weight: bold;
+}
+
+.consultation_form_section_col2_content{
+    width: 100%;
+    height: max-content;
+    padding-right: 20%;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.consultation_form_section_col2 {
+    background-image: url(../img/CONSULTATION_bg.jpg);
+    background-size: cover;
+    /* Ensures the image covers the entire div */
+    background-position: center;
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    overflow: hidden;
+}
+
+.consultation_form_section_col2 h3 {
+    color: #fff;
+    font-size: 300%;
+    font-weight: 600;
+}
+
+.consultation_form_section_col2 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+    .consultation_form_section_col1_content{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .consultation_form_section_col2_content{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .why_choose_us {
     width: 100%;
     height: max-content;
     padding-left: 10%;
     padding-right: 10%;
-    /* padding-top: 40px; */
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .why_choose_us_col_1 img {
-    width: 60%;
+    width: 80%;
     float: right;
 }
 
@@ -353,27 +465,27 @@ body {
     font-weight: 600;
 }
 
-.card_2{
-    width: 80%;
+.card_2 {
+    width: 100%;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-        box-shadow: 0px 0px 20px 6px #04a57f30;
-        border-radius: 10px;
-        margin-bottom: 20px;
+    box-shadow: 0px 0px 20px 6px #04a57f30;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
-.card_2 img{
+.card_2 img {
     width: 20%;
     height: 20%;
 }
 
-.card_2_content{
+.card_2_content {
     padding-left: 10px;
 }
 
-.card_2_content p{
+.card_2_content p {
     margin: 0;
 }
 
@@ -388,3 +500,50 @@ body {
         display: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    height: max-content;
+    background-color: #04A57F;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 40px;    
+    padding-bottom: 40px;    
+}
+
+.footer_col img{
+    width: 60%;
+}
+
+.footer_col h4{
+    color: #fff;
+    text-align: left;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.footer_socials i{
+    font-size: 170%;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+/* .footer_socials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
