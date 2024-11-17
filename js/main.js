@@ -1,4 +1,20 @@
 // **********************************
+// load header and footer
+// **********************************
+async function loadHeaderFooter() {
+    // const headerContent = await fetch('header.html').then(res => res.text());
+    const footerContent = await fetch('footer.html').then(res => res.text());
+    // document.getElementById('header').innerHTML = headerContent;
+    document.getElementById('footer').innerHTML = footerContent;
+}
+
+loadHeaderFooter();
+
+
+
+
+
+// **********************************
 // scroll-color handling for header
 // **********************************
 const header = document.querySelector('.header');
@@ -7,9 +23,11 @@ const links = header.querySelectorAll('a');
 window.addEventListener('scroll', () => {
     if (window.scrollY === 0) {
         header.style.backgroundColor = '#ffffff00'; // Transparent
+        header.style.boxShadow = 'none'; // shadow
         links.forEach(link => (link.style.color = '#fff')); // White links
     } else {
         header.style.backgroundColor = '#fff'; // White background
+        header.style.boxShadow = '0px 11px 20px 6px #00000063'; // shadow
         links.forEach(link => (link.style.color = '#000')); // Black links
     }
 });
