@@ -244,7 +244,7 @@ body {
 .hero {
     width: 100%;
     height: max-content;
-    background-image: url(../img/hero_bg.jpg);
+    background-image: url(../img/hero_bg.webp);
     background-size: cover;
     /* Ensures the image covers the entire div */
     background-position: center;
@@ -503,7 +503,7 @@ body {
 }
 
 .consultation_form_section_col2 {
-    background-image: url(../img/CONSULTATION_bg.jpg);
+    background-image: url(../img/CONSULTATION_bg.webp);
     background-size: cover;
     /* Ensures the image covers the entire div */
     background-position: center;
