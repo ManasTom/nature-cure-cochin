@@ -15,45 +15,44 @@ loadHeaderFooter();
 
 
 // **********************************
-// scroll-color handling for header
+// Scroll and hamburger menu handling for header
 // **********************************
 const header = document.querySelector('.header');
 const links = header.querySelectorAll('a');
+const hamburgerIcon = document.getElementById('hamburger');
+const mobileMenu = document.getElementById("mobileMenu");
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY === 0) {
+// Function to update header styles based on scroll position
+function updateHeaderStyles() {
+    if (window.scrollY === 0 && mobileMenu.style.display !== "block") {
         header.style.backgroundColor = '#ffffff00'; // Transparent
-        header.style.boxShadow = 'none'; // shadow
+        header.style.boxShadow = 'none'; // No shadow
+        hamburgerIcon.style.color = '#fff';
         links.forEach(link => (link.style.color = '#fff')); // White links
     } else {
         header.style.backgroundColor = '#fff'; // White background
-        header.style.boxShadow = '0px 11px 20px 6px #00000063'; // shadow
+        header.style.boxShadow = '0px 11px 20px 6px #00000063'; // Shadow
+        hamburgerIcon.style.color = '#000';
         links.forEach(link => (link.style.color = '#000')); // Black links
     }
-});
-
-
-
-
-// **********************************
-// hamburger MENU FOR MOBILE VIEW
-// **********************************
-function hamburgerToggle() {
-    var menu = document.getElementById("mobileMenu");
-    var header = document.getElementById("header");
-    var hamburger = document.getElementById("hamburger");
-
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-        header.style.backgroundColor = "#00000000";
-        hamburger.style.color = "#fff";
-    } else {
-        menu.style.display = "block";
-        header.style.backgroundColor = "#fff";
-        hamburger.style.color = "#000";
-
-    }
 }
+
+// Function to toggle hamburger menu visibility
+function hamburgerToggle() {
+    if (mobileMenu.style.display === "block") {
+        mobileMenu.style.display = "none";
+    } else {
+        mobileMenu.style.display = "block";
+    }
+    // Update header styles to handle the open/close state of the menu
+    updateHeaderStyles();
+}
+
+// Attach the scroll event listener to update header on scroll
+window.addEventListener('scroll', updateHeaderStyles);
+
+// Call updateHeaderStyles on page load to set initial styles
+updateHeaderStyles();
 
 
 

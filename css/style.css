@@ -1090,5 +1090,10 @@ body {
     .contact_sec {
         padding-left: 5%;
         padding-right: 5%;
-    }   
+    }  
+    .contact_form{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    } 
 }
