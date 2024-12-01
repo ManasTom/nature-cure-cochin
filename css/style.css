@@ -739,6 +739,32 @@ body {
     width: 100%;
 }
 
+.review_submission_box{
+    width: 100%;
+    height: max-content;
+    border: 2px dotted #04A57F;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.review_submission_box input{
+    width: 100%;
+    outline: none;
+    border: 2px solid #04A57F;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.review_submission_box textarea{
+    width: 100%;
+    outline: none;
+    border: 2px solid #04A57F;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 768px) {
     .reviews_sec {
         padding-left: 5%;
@@ -1332,4 +1358,45 @@ body {
     background-color: #ff0000;
     border-radius: 5px;
     padding: 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+.reviews_box{
+    border: 1px dashed #04A57F;
+    padding: 10px;
+}
+
+.reviewToggler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 3px solid #04A57F;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+}
+
+.reviewToggleButton1{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: #04A57F;
+    outline: none;
+    border: 2px solid #04A57F;
+    color: #fff;
+}
+.reviewToggleButton2{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: #ffffff00;
+    outline: none;
+    border: 2px solid #04A57F;
+    color: #000;
 }

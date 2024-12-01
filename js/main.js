@@ -99,3 +99,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+//script for treatments handling 
+

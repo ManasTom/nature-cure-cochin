@@ -324,6 +324,22 @@
 
     <section class="reviews_sec">
         <img src="img/reviews-dummy.webp" alt="">
+        <div class="review_submission_box">
+            <form action="submit_review.php" method="post">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_submission_box_col">
+                        <input type="text" placeholder="Your Name" id="name" name="name">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_submission_box_col">
+                        <input type="email" placeholder="Your Email" id="email" name="email">
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 review_submission_box_col">
+                        <textarea name="review" id="review" placeholder="Your Review" rows="5"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="button_1">Submit</button>
+            </form>
+        </div>
     </section>
 
 
