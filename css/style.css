@@ -1366,7 +1366,9 @@ body {
 
 
 
-
+.admin_pannel_reviews{
+    padding: 10px;
+}
 
 .reviews_box{
     border: 1px dashed #04A57F;
@@ -1399,4 +1401,61 @@ body {
     outline: none;
     border: 2px solid #04A57F;
     color: #000;
+}
+
+.approved_reviews_table{
+    width: 100%;
+    max-height: 70vh;
+    overflow: hidden;
+    display: none;
+}
+.pending_reviews_table{
+    width: 100%;
+    max-height: 70vh;
+    overflow: hidden;
+    display: block;
+}
+
+
+.reviews_box table{
+    width: 100%;
+    height: max-content;
+    border: 1px solid #04A57F;
+}
+
+.reviews_box th{
+    font-weight: bold;
+    border: 1px solid #04A57F;
+}
+
+.reviews_box td{
+    padding: 5px;
+    border: 1px solid #04A57F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admin_pannel_gallery{
+    padding: 10px;
+}
+
+.gallery_box{
+    border: 1px dashed #04A57F;
+    padding: 10px;
+}
+
+.gallery_box input{
+    border: 1px solid #04A57F;
+    padding: 10px;
+    border-radius: 10px;
 }

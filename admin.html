@@ -89,8 +89,8 @@
                 <div class="admin_pannel_reviews">
                     <div class="reviews_box">
                         <div class="reviewToggler">
-                            <button class="reviewToggleButton1">Pending</button>
-                            <button class="reviewToggleButton2">Approved</button>
+                            <button onclick="displayPendingReviews()" class="reviewToggleButton1">Pending</button>
+                            <button onclick="displayApprovedReviews()" class="reviewToggleButton2">Approved</button>
                         </div>
                         <div class="pending_reviews_table">
 
@@ -101,7 +101,13 @@
                     </div>
                 </div>
                 <div class="admin_pannel_gallery">
-                    admin_pannel_gallery
+                    <div class="gallery_box">
+                        <form action="uploadGalleryImages.php" method="post" enctype="multipart/form-data">
+                            <label for="images">Upload Images to Gallery here..</label> <br>
+                            <input type="file" id="images" name="images[]" multiple> <br><br>
+                            <button type="submit" class="button_2">Upload</button>
+                        </form>                        
+                    </div>
                 </div>
                 <div class="admin_pannel_team">
                     <div class="team_input_box">
@@ -138,6 +144,9 @@
     <script src="js/adminToggler.js"></script>
     <script src="js/main.js"></script>
     <script src="js/treatments.js"></script>
+    <script src="js/pendingReviews.js"></script>
+    <script src="js/approvedReviews.js"></script>
+    <script src="js/reviewToggler.js"></script>
 </body>
 
 </html>
