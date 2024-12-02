@@ -1534,3 +1534,23 @@ body {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile screens */
     }
 }
+
+
+
+
+
+
+
+
+
+.admin_pannel_team{
+    padding: 10px;
+}
+
+.admin_pannel_team input{
+    border: 1px solid #04A57F;
+    padding: 8px;
+    border-radius: 10px;
+    min-width: 50%;
+    background-color: #00000000;
+}
