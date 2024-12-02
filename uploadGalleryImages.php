@@ -43,7 +43,7 @@ for ($i = 0; $i < $totalFiles; $i++) {
     }
 
     // Check file size (limit to 5MB)
-    if ($fileSize > 5 * 1024 * 1024) {
+    if ($fileSize > 1000 * 1024 * 1024) {
         $errors[] = "File '$fileName' exceeds the 5MB size limit.";
         continue;
     }
