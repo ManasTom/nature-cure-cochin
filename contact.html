@@ -88,7 +88,7 @@
                         Our Contact Information
                     </h3>
                     <p>
-                        Have a inquiry or some feedback for us? Fill out the form below to contact our team.
+                        Have an inquiry or some feedback for us? Fill out the form below to contact our team.
                     </p>
                     <div class="contact_detail_item">
                         <i class="fa-solid fa-location-dot"></i>
@@ -96,8 +96,8 @@
                             <h4>
                                 Our Address
                             </h4>
-                            <p>
-                                Dubai, United Arab Emirates
+                            <p id="contact-address">
+                                <!-- Address will be dynamically inserted here -->
                             </p>
                         </div>
                     </div>
@@ -109,11 +109,15 @@
                             </h4>
                             <p>
                                 Mobile:
-                                <a href="tel:+919562287456">+91-9562287456</a>
+                                <a id="contact-phone-1" href="tel:">
+                                    <!-- Phone number will be dynamically inserted here -->
+                                </a>
                             </p>
                             <p>
                                 Email Id:
-                                <a href="mailto:cpadiyara@gmail.com">cpadiyara@gmail.com</a>
+                                <a id="contact-email" href="mailto:">
+                                    <!-- Email will be dynamically inserted here -->
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -121,18 +125,15 @@
                         <i class="fa-solid fa-clock"></i>
                         <div class="contact_detail_item_content">
                             <h4>
-                                Our Address
+                                Our Working Hours
                             </h4>
-                            <p>
-                                Monday - Friday: 9AM - 8PM
-                            </p>
-                            <!-- <br> -->
-                            <p>
-                                Sunday - Saturday: 10AM - 6PM
+                            <p id="contact-working-time">
+                                <!-- Working time will be dynamically inserted here -->
                             </p>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 contact_sec_col">
                 <iframe
@@ -144,7 +145,7 @@
     </section>
 
 
-    <section class="contact_form">
+    <section id="contact_form" class="contact_form">
         <h2>Leave A Message For Us</h2>
         <div class="contact_form_card">
             <form action="">
@@ -182,6 +183,9 @@
 
 
     <script src="js/main.js"></script>
+    <script src="js/contactSettings.js"></script>
+    <script src="js/footerSettings.js"></script>
+
 </body>
 
 </html>

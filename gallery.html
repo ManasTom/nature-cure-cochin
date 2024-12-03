@@ -80,17 +80,98 @@
     </div>
 
 
+<div class="gallery_display">
 
+</div>
 
 
     <div id="footer"></div>
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const galleryDisplay = document.querySelector(".gallery_display");
+            const galleryFolderPath = "database/gallery/";
+      
+            async function loadGalleryImages() {
+                try {
+                    const response = await fetch("getGalleryImages.php");
+                    if (!response.ok) throw new Error("Failed to fetch gallery images.");
+      
+                    const images = await response.json();
+      
+                    // Create gallery items dynamically
+                    images.forEach(image => {
+                        const galleryItem = document.createElement("div");
+                        galleryItem.classList.add("gallery_item");
+      
+                        const imgElement = document.createElement("img");
+                        imgElement.src = galleryFolderPath + image;
+                        imgElement.alt = "Gallery Image";
+      
+                        galleryItem.appendChild(imgElement);
+                        galleryDisplay.appendChild(galleryItem);
+                    });
+                } catch (error) {
+                    console.error("Error loading gallery images:", error.message);
+                    galleryDisplay.innerHTML = `<p>Error loading gallery images: ${error.message}</p>`;
+                }
+            }
+      
+            loadGalleryImages();
+        });
+      </script>
+      
+      
+      
+
+
+      <style>
+        .gallery_display {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Default: 2 columns */
+            gap: 15px;
+            padding: 20px;
+        }
+      
+        .gallery_item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+      
+        .gallery_item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+      
+        .gallery_item:hover img {
+            transform: scale(1.05);
+        }
+      
+        /* Adjust columns for larger screens */
+        @media screen and (min-width: 768px) {
+            .gallery_display {
+                grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+            }
+        }
+      
+        @media screen and (min-width: 1024px) {
+            .gallery_display {
+                grid-template-columns: repeat(4, 1fr); /* 4 columns for desktops */
+            }
+        }
+      </style>
+      
+      
 
 
 
 
     <script src="js/main.js"></script>
+    <script src="js/footerSettings.js"></script>
 </body>
 
 </html>

@@ -1,22 +1,47 @@
 [
     {
         "title": "Diet Therapy",
-        "description": "Our greatest asset is our food. The food we eat should be the medicine for us. Depending on this theory, we are providing nutritious food for our patients. The main food chart includes...",
-        "image": "1733204750_Screenshot (2).png"
+        "description": "Our greatest asset is our food. The food we eat should be the medicine for us. Depending on this theory, we are providing nutritious food for our patients. The main food chart includes. Our greatest asset is our food. The food we eat should be the medicine for us. Depending on this theory, we are providing nutritious food for our patients. The main food chart includes...",
+        "image": "1733238899_Diet Therapy.png"
     },
     {
         "title": "Yoga",
         "description": "Yoga provides both physical and mental health. Yoga is a system of health science that has been contributed by India after many observations, thoughts, and experiments....",
-        "image": "1733204778_Screenshot (9).png"
+        "image": "1733239036_Yoga.png"
     },
     {
         "title": "Steam Bath",
         "description": "This is the process of placing the patient in a specially equipped cabin and exposing steam with the correct temperature to sweat the body (10\u201315 minutes).",
-        "image": "1733204807_Screenshot (7).png"
+        "image": "1733239049_Steam Bath.png"
     },
     {
         "title": "Hip Bath",
         "description": "Usually known as an abdominal bath. Therapeutic method of soaking the patient's abdomen by filling a specially prepared container with water.",
-        "image": "1733204833_Screenshot (6).png"
+        "image": "1733239061_Hip Bath.png"
+    },
+    {
+        "title": "Spinal Bath",
+        "description": "The spinal bath is another important form of hydrotherapy treatment. This bath provides a soothing effect to the spinal column and thereby influences the central nervous system...",
+        "image": "1733239187_Spinal Bath.png"
+    },
+    {
+        "title": "Mud Therapy",
+        "description": "Earth has a tremendous impact on the maintenance of health and prevention of diseases. Minerals and trace elements present in mud make it known for its renowned effects...",
+        "image": "1733239220_Mud Therapy\u00a0.png"
+    },
+    {
+        "title": "Acupuncture",
+        "description": "Chinese traditional medicine, in which fine needles are inserted in the skin at specific points that are considered to be lines of energy (meridians), is used in the treatment of various physical....",
+        "image": "1733239256_Acupuncture.png"
+    },
+    {
+        "title": "Physiotherapy",
+        "description": "Physiotherapy helps to restore movement and function when someone is affected by injury, illness, or disability. It can also help to reduce your risk of injury or illness in the...",
+        "image": "1733239284_Physiotherapy.png"
+    },
+    {
+        "title": "Massage",
+        "description": "Massage is part of integrative medicine. Medical centers often offer it with standard treatment. It can be used for a wide range of medical conditions.",
+        "image": "1733239316_Massage.png"
     }
 ]

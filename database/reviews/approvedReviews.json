@@ -1,8 +1,50 @@
 [
     {
-        "name": "Manas Tom",
-        "email": "manastom670@gmail.com",
-        "review": "this is a test message.",
-        "timestamp": "2024-12-01 14:45:51"
+        "name": "Aarav Sharma",
+        "email": "aarav.sharma@example.com",
+        "review": "The serene environment and the herbal treatments were amazing. Felt truly rejuvenated!",
+        "timestamp": "2024-12-02 10:30:45"
+    },
+    {
+        "name": "Meera Nair",
+        "email": "meera.nair@example.com",
+        "review": "The staff was incredibly kind, and the therapies were very relaxing. Highly recommend it.",
+        "timestamp": "2024-12-01 18:15:21"
+    },
+    {
+        "name": "John Mathews",
+        "email": "john.mathews@example.com",
+        "review": "I loved the natural therapies. My stress levels have significantly reduced. Thank you!",
+        "timestamp": "2024-12-03 09:25:34"
+    },
+    {
+        "name": "Sophia Fernandez",
+        "email": "sophia.fernandez@example.com",
+        "review": "The wellness center is surrounded by greenery, making it so peaceful. Great experience!",
+        "timestamp": "2024-12-02 12:45:10"
+    },
+    {
+        "name": "Rohit Khanna",
+        "email": "rohit.khanna@example.com",
+        "review": "The Ayurvedic massage was incredibly relaxing. I feel much healthier already.",
+        "timestamp": "2024-12-01 11:20:05"
+    },
+    {
+        "name": "Emily White",
+        "email": "emily.white@example.com",
+        "review": "I appreciate the attention to detail in every treatment. The team is fantastic!",
+        "timestamp": "2024-12-03 14:40:27"
+    },
+    {
+        "name": "Kavya Menon",
+        "email": "kavya.menon@example.com",
+        "review": "The detox program worked wonders for me. I feel lighter and more energetic.",
+        "timestamp": "2024-12-02 16:50:38"
+    },
+    {
+        "name": "Daniel Joseph",
+        "email": "daniel.joseph@example.com",
+        "review": "The personalized care and organic remedies made a huge difference. Absolutely loved it!",
+        "timestamp": "2024-12-03 17:05:50"
     }
 ]

@@ -270,61 +270,29 @@
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
             laborum.
         </p>
-        <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                <div class="profile_card">
-                    <img src="img/profile1.webp" alt="">
-                    <h5>
-                        Anthony Joe
-                    </h5>
-                    <p>
-                        Director of Board
-                    </p>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                <div class="profile_card">
-                    <img src="img/profile2.webp" alt="">
-                    <h5>
-                        Anthony Joe
-                    </h5>
-                    <p>
-                        Director of Board
-                    </p>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                <div class="profile_card">
-                    <img src="img/profile3.webp" alt="">
-                    <h5>
-                        Anthony Joe
-                    </h5>
-                    <p>
-                        Director of Board
-                    </p>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                <div class="profile_card">
-                    <img src="img/profile4.webp" alt="">
-                    <h5>
-                        Anthony Joe
-                    </h5>
-                    <p>
-                        Director of Board
-                    </p>
-                </div>
-            </div>
-        </div>
+        <section class="team_section">
+            <div class="team_grid"></div>
+        </section>
+        
     </section>
 
 
 
 
 
-    <section class="reviews_sec">
-        <img src="img/reviews-dummy.webp" alt="">
+    <section class="review_sec">
+        <section class="reviews_sec">
+            <div class="reviews_slideshow">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+        </section>
+        <br><br>
+        <button onclick="openReviewPopup()" class="button_1">Write a Review</button>
+        <br><br>
+        
         <div class="review_submission_box">
+            <button onclick="closeReviewPopup()" class="close_button">Close</button>
+            <br><br>
             <form action="submit_review.php" method="post">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 review_submission_box_col">
@@ -356,11 +324,19 @@
     <div id="footer"></div>
 
 
-
+    <script></script>
+<style>
+    
+</style>
+    
 
 
 
     <script src="js/main.js"></script>
+    <script src="js/reviewSlider.js"></script>
+    <script src="js/reviewPopup.js"></script>
+    <script src="js/footerSettings.js"></script>
+    <script src="js/team.js"></script>
 </body>
 
 </html>

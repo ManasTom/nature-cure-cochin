@@ -112,7 +112,7 @@
                 </div>
                 <div class="admin_pannel_team">
                     <div class="team_input_box">
-                        <h2>Add / Edit Member</h2>
+                        <h2>Add Member</h2>
                         <form action="uploadTeamMember.php" method="POST" enctype="multipart/form-data">
                             <input type="text" placeholder="Full Name" id="name" name="name"><br> <br>
                             <input type="text" placeholder="Designation" id="designation" name="designation"><br><br>
@@ -156,36 +156,47 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const form = document.querySelector("form");
-            const addressInput = document.getElementById("address");
-            const emailInput = document.getElementById("email");
-            const phone1Input = document.getElementById("phone_1");
-            const phone2Input = document.getElementById("phone_2");
-            const workingTimeInput = document.getElementById("workingTime");
+            const treatmentsSec = document.querySelector(".treatments_sec");
+            const jsonFilePath = "database/treatments/treatments.json";
 
-            const jsonFilePath = "database/site/siteSettings.json";
-
-            // Function to load site settings from JSON file
-            async function loadSiteSettings() {
+            // Function to load and display treatments dynamically
+            async function loadTreatments() {
                 try {
                     const response = await fetch(jsonFilePath);
-                    if (!response.ok) throw new Error("Failed to load site settings.");
+                    if (!response.ok) throw new Error("Failed to fetch treatments data.");
 
-                    const data = await response.json();
-
-                    // Preload the form fields with the data from the JSON file
-                    addressInput.value = data.address || "";
-                    emailInput.value = data.email || "";
-                    phone1Input.value = data.phone_1 || "";
-                    phone2Input.value = data.phone_2 || "";
-                    workingTimeInput.value = data.workingTime || "";
+                    const treatmentsData = await response.json();
+                    createTreatmentCards(treatmentsData);
                 } catch (error) {
-                    console.error("Error loading site settings:", error.message);
+                    treatmentsSec.innerHTML = `<p>Error loading treatments: ${error.message}</p>`;
                 }
             }
 
-            // Load the site settings on page load
-            loadSiteSettings();
+            // Function to create cards for each treatment
+            function createTreatmentCards(data) {
+                treatmentsSec.innerHTML = ""; // Clear any existing content
+
+                const gridContainer = document.createElement("div");
+                gridContainer.classList.add("treatment-cards-grid");
+
+                data.forEach(item => {
+                    const card = document.createElement("div");
+                    card.classList.add("treatment-card");
+
+                    card.innerHTML = `
+                <img src="database/treatments/${item.image}" alt="${item.title}" class="treatment-image">
+                <h3 class="treatment-title">${item.title}</h3>
+                <p class="treatment-description">${item.description}</p>
+            `;
+
+                    gridContainer.appendChild(card);
+                });
+
+                treatmentsSec.appendChild(gridContainer);
+            }
+
+            // Load the treatments data on page load
+            loadTreatments();
         });
 
     </script>
@@ -201,6 +212,7 @@
     <script src="js/reviewToggler.js"></script>
     <script src="js/admingGalleryDisplay.js"></script>
     <script src="js/teamTable.js"></script>
+    <script src="js/siteSettings.js"></script>
 </body>
 
 </html>

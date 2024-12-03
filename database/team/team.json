@@ -1,7 +1,27 @@
 [
     {
-        "name": "Manas Tom",
-        "designation": "director",
-        "image": "1733204635_Screenshot (25).png"
+        "name": "Anthony Joe",
+        "designation": "Director of Board",
+        "image": "1733245053_Anthony Joe 1.png"
+    },
+    {
+        "name": "John Deo",
+        "designation": "Medical Specialist",
+        "image": "1733245101_Anthony Joe 2.png"
+    },
+    {
+        "name": "Rickey Martin",
+        "designation": "Medical Consultant",
+        "image": "1733245140_Anthony Joe 3.png"
+    },
+    {
+        "name": "Anna Clark",
+        "designation": "House Nurse",
+        "image": "1733245181_Anthony Joe 4.png"
+    },
+    {
+        "name": "Anna ",
+        "designation": " Nurse",
+        "image": "1733245181_Anthony Joe 4.png"
     }
 ]
