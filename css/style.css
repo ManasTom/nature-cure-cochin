@@ -1572,6 +1572,13 @@ body {
     border: 1px solid #04A57F;
 }
 
+.deleteMemberButton{
+    border: none;
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
 
 
 

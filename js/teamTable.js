@@ -46,7 +46,7 @@
                         </td>
                         <td>
                             
-                            <button class="deleteButton" data-index="${index}">Delete</button>
+                            <button class="deleteMemberButton" data-index="${index}">Delete</button>
                         </td>
                     `;
     
@@ -65,7 +65,7 @@
                     })
                 );
     
-                document.querySelectorAll(".deleteButton").forEach(button =>
+                document.querySelectorAll(".deleteMemberButton").forEach(button =>
                     button.addEventListener("click", (e) => {
                         const index = e.target.getAttribute("data-index");
                         deleteTeamMember(index, data[index].image);
