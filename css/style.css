@@ -1572,3 +1572,41 @@ body {
     border: 1px solid #04A57F;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admin_pannel_site_settings{
+    padding: 10px;
+}
+
+.site_settings_box{
+    border: 1px dashed #04A57F;
+    padding: 10px;
+}
+
+.site_settings_box input{
+    border: 1px solid #04A57F;
+    padding: 8px;
+    border-radius: 10px;
+    min-width: 50%;
+    background-color: #00000000;
+}
+.site_settings_box textarea{
+    border: 1px solid #04A57F;
+    padding: 8px;
+    border-radius: 10px;
+    min-width: 50%;
+    background-color: #00000000;
+}
