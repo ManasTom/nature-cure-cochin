@@ -1554,3 +1554,21 @@ body {
     min-width: 50%;
     background-color: #00000000;
 }
+
+
+.admin_pannel_team table{
+    width: 100%;
+    height: max-content;
+    border: 1px solid #04A57F;
+}
+
+.admin_pannel_team th{
+    font-weight: bold;
+    border: 1px solid #04A57F;
+}
+
+.admin_pannel_team td{
+    padding: 5px;
+    border: 1px solid #04A57F;
+}
+
