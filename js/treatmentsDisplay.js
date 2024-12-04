@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <h3 class="treatment-title">${item.title}</h3>
         <p class="treatment-description">${item.description}</p>
-        <h5><a href="contact.html#contact_form">Learn more</a></h5>
+        <h5><a href="contact.html#contact_form">Enquire Now</a></h5>
     `;
 
             gridContainer.appendChild(card);
