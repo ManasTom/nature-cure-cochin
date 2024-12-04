@@ -62,10 +62,10 @@ for ($i = 0; $i < $totalFiles; $i++) {
 
 // Output results
 if (empty($errors)) {
-    echo "Images uploaded successfully! Files: <br>";
-    echo implode("<br>", $uploadedFilePaths);
+    echo "<script type='text/javascript'>alert(' Images uploaded successfully!');window.location.href='admin.html'</script>";
 } else {
-    echo "Some files could not be uploaded:<br>";
-    echo implode("<br>", $errors);
+    echo "<script type='text/javascript'>alert(' Some files could not be uploaded');window.location.href='admin.html'</script>";
+    // echo ":<br>";
+    // echo implode("<br>", $errors);
 }
 ?>

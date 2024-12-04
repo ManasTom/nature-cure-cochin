@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Save the updated data back to the JSON file
     if (file_put_contents($reviewsFile, json_encode($reviewsData, JSON_PRETTY_PRINT))) {
-        echo json_encode(["status" => "success", "message" => "Review submitted successfully."]);
+        echo "<script type='text/javascript'>alert(' Review submitted successfully.');window.location.href='index.html'</script>";
     } else {
         echo json_encode(["status" => "error", "message" => "Failed to save the review."]);
     }

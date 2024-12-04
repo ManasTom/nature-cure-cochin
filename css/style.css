@@ -1405,7 +1405,8 @@ body {
 
 
 .admin_header_col2 a {
-    color: #fff;
+    color: #fff !important;
+    cursor: pointer;
     padding-right: 10px;
 }
 

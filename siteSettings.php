@@ -29,13 +29,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Save the data to the JSON file (overwrite the existing data)
     if (file_put_contents($jsonFilePath, json_encode($siteSettings, JSON_PRETTY_PRINT))) {
-        echo "Site settings saved successfully.";
+        echo "<script type='text/javascript'>alert(' Site settings saved successfully.');window.location.href='admin.html'</script>";
+
     } else {
         http_response_code(500);
-        echo "Error saving site settings.";
+        echo "<script type='text/javascript'>alert(' Error saving site settings.');window.location.href='admin.html'</script>";
     }
 } else {
     http_response_code(405);
-    echo "Method not allowed.";
+    echo "<script type='text/javascript'>alert('Method not allowed. ');window.location.href='admin.html'</script>";
+
 }
 ?>

@@ -53,15 +53,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Save the updated data back to team.json
             if (file_put_contents($jsonFile, json_encode($teamData, JSON_PRETTY_PRINT))) {
-                echo "Team member added successfully!";
+                echo "<script type='text/javascript'>alert(' Team member added successfully!');window.location.href='admin.html'</script>";
             } else {
-                echo "Error saving team member data.";
+                echo json_encode(["status" => "error", "message" => " Error saving team member data."]);
             }
         } else {
-            echo "Error uploading the file. Please try again.";
+            echo json_encode(["status" => "error", "message" => " Error uploading the file. Please try again."]);
         }
     } else {
-        echo "All fields are required, including the profile picture.";
+        echo json_encode(["status" => "error", "message" => " All fields are required, including the profile picture."]);
     }
 }
 
