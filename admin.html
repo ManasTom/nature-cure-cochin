@@ -43,7 +43,7 @@
                 <p>CNPCC</p>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 admin_header_col2">
-                <a href="">Logout</a>
+                <a onclick="logoutUser()">Logout</a>
             </div>
         </div>
     </section>
@@ -155,53 +155,36 @@
 
 
     <script>
+
         document.addEventListener("DOMContentLoaded", function () {
-            const treatmentsSec = document.querySelector(".treatments_sec");
-            const jsonFilePath = "database/treatments/treatments.json";
-
-            // Function to load and display treatments dynamically
-            async function loadTreatments() {
-                try {
-                    const response = await fetch(jsonFilePath);
-                    if (!response.ok) throw new Error("Failed to fetch treatments data.");
-
-                    const treatmentsData = await response.json();
-                    createTreatmentCards(treatmentsData);
-                } catch (error) {
-                    treatmentsSec.innerHTML = `<p>Error loading treatments: ${error.message}</p>`;
+            // Firebase Authentication to check if a user is logged in
+            firebase.auth().onAuthStateChanged(function (user) {
+                if (!user) {
+                    // No user is signed in, redirect to login page
+                    window.location.href = 'login.html';
                 }
-            }
-
-            // Function to create cards for each treatment
-            function createTreatmentCards(data) {
-                treatmentsSec.innerHTML = ""; // Clear any existing content
-
-                const gridContainer = document.createElement("div");
-                gridContainer.classList.add("treatment-cards-grid");
-
-                data.forEach(item => {
-                    const card = document.createElement("div");
-                    card.classList.add("treatment-card");
-
-                    card.innerHTML = `
-                <img src="database/treatments/${item.image}" alt="${item.title}" class="treatment-image">
-                <h3 class="treatment-title">${item.title}</h3>
-                <p class="treatment-description">${item.description}</p>
-            `;
-
-                    gridContainer.appendChild(card);
-                });
-
-                treatmentsSec.appendChild(gridContainer);
-            }
-
-            // Load the treatments data on page load
-            loadTreatments();
+            });
         });
+
+
+        // Function to handle logout
+        function logoutUser() {
+            if (confirm('Are you sure you want to logout?')) {
+                firebase.auth().signOut().then(() => {
+                    window.location.href = 'login.html';
+                }).catch((error) => {
+                    console.error('Error logging out: ', error);
+                });
+            }
+        }
 
     </script>
 
-
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="js/fireconfig.js"></script>
+    <script src="js/login.js"></script>
 
 
     <script src="js/adminToggler.js"></script>

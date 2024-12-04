@@ -70,94 +70,90 @@
         <img class="hero02_img_lg" src="img/about_hero_lg.webp" alt="">
         <img class="hero02_img_sm" src="img/about_hero_sm.webp" alt="">
         <div class="hero02_content_container">
-            <h2>
-                Treatments
-            </h2>
-            <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+            <h2>About Us</h2>
+            <p> Intersted in knowing more about us..!!</p>
         </div>
     </div>
 
 
-    <section class="treatments_sec">
-
-    </section>
-
-
-    <section class="consultation_form_section">
-        <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 consultation_form_section_col1">
-                <div class="consultation_form_section_col1_content">
-                    <h3>
-                        Your Health is Our Primary <span class="active">Concern</span>
-                    </h3>
-                    <p>
-                        At Cardinal Padiyara Naturecure Yogashram Hospital, our consultation focuses on guiding you
-                        towards
-                        natural healing and a balanced lifestyle. We provide tailored advice to help detoxify,
-                        rejuvenate,
-                        and
-                        promote long-term health.
-                    </p>
-                    <div class="row home_checklist">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                            <p><i class="fa-solid fa-circle-check"></i> &nbsp; Health Assessment</p>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                            <p><i class="fa-solid fa-circle-check"></i> &nbsp; Customized Plan</p>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                            <p><i class="fa-solid fa-circle-check"></i> &nbsp; Natural Therapies</p>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                            <p><i class="fa-solid fa-circle-check"></i> &nbsp; Wellness Guidance</p>
-                        </div>
+    <section class="book_appointment">
+        <div class="appointment_form_box">
+            <form action="book-appointment.php" method="post">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="firstName"> First Name :</label>
+                        <input type="text" id="firstName" name="firstName" required>
                     </div>
-                    <button class="button_1">Read More</button>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="lastName">Last Name :</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="phone">Phone :</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="gender">Gender :</label>
+                        <select name="gender" id="gender" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="date">Appointment Date :</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <label for="address">Your Yddress</label>
+                        <textarea name="address" id="address" rows="4" required></textarea>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="visitedBefore">Have you ever applied to our facility before?</label>
+                        <select name="visitedBefore" id="visitedBefore" required>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <label for="treatment">Which treatment would you prefer having.. ?</label>
+                        <select name="treatment" id="treatment">
+                            <option value="Diet Therapy">Diet Therapy</option>
+                            <option value="Yoga">Yoga</option>
+                            <option value="Steam Bath">Steam Bath</option>
+                            <option value="Hip Bath">Hip Bath</option>
+                            <option value="Spinal Bath">Spinal Bath</option>
+                            <option value="Mud Therapy">Mud Therapy</option>
+                            <option value="Acupuncture">Acupuncture</option>
+                            <option value="Physiotherapy">Physiotherapy</option>
+                            <option value="Massage">Massage</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <button type="submit" class="button_1">Send Booking Enquiry</button>
+                    </div>
                 </div>
+            </form>
 
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 consultation_form_section_col2">
-                <div class="consultation_form_section_col2_content">
-                    <h3>
-                        Schedule a Free Consultation
-                    </h3>
-                    <form action="submit-enquiry.php" method="post">
-                        <input type="text" placeholder="First Name" id="firstName" name="firstName"> <br>
-                        <input type="text" placeholder="Last Name" id="lastName" name="lastName"> <br>
-                        <input type="tel" placeholder="Phone Number" id="phone" name="phone"><br>
-                        <input type="email" placeholder="Your email id" id="email" name="email"><br>
-                        <textarea id="message" name="message" placeholder="Your Message"></textarea><br>
-                        <button type="submit" class="button_1">Make an Enquiry</button>
-                    </form>
-                </div>
-            </div>
         </div>
     </section>
 
 
-    <section class="team">
-        <h3>Meet Our <span class="active">Team</span></h3>
-        <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.
-        </p>
-        <section class="team_section">
-            <div class="team_grid"></div>
-        </section>
-        
-    </section>
+
 
 
     <div id="footer"></div>
 
 
-    <script src="js/treatmentsDisplay.js"></script>
+
+
+
+
     <script src="js/main.js"></script>
     <script src="js/footerSettings.js"></script>
-    <script src="js/team.js"></script>
-</body>
 
 </html>

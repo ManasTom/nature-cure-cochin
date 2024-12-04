@@ -198,12 +198,13 @@
                     <h3>
                         Schedule a Free Consultation
                     </h3>
-                    <form action="">
-                        <input type="text" placeholder="Your Name" id="name" name="name"> <br>
+                    <form action="submit-enquiry.php" method="post">
+                        <input type="text" placeholder="First Name" id="firstName" name="firstName"> <br>
+                        <input type="text" placeholder="Last Name" id="lastName" name="lastName"> <br>
                         <input type="tel" placeholder="Phone Number" id="phone" name="phone"><br>
                         <input type="email" placeholder="Your email id" id="email" name="email"><br>
-                        <input type="text" placeholder="Your Place" id="place" name="place"><br>
-                        <button class="button_1">Make an Enquiry</button>
+                        <textarea id="message" name="message" placeholder="Your Message"></textarea><br>
+                        <button type="submit" class="button_1">Make an Enquiry</button>
                     </form>
                 </div>
             </div>
@@ -281,6 +282,7 @@
 
 
     <section class="review_sec">
+        <h2>See What Our Customers Says..!</h2>
         <section class="reviews_sec">
             <div class="reviews_slideshow">
                 <!-- Reviews will be dynamically added here -->
