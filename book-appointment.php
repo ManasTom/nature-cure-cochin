@@ -83,7 +83,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <p><strong>Treatment Preference:</strong> $treatment</p>
             </div>
             <div class='footer'>
-                <p>&copy; 2024 Cardinal Padiyara Nature Cure Hospital. All Rights Reserved.</p>
+                <p>&copy; 2024 Cardinal Padiyara Nature Cure Yogashram. All Rights Reserved.</p>
             </div>
         </div>
     </body>
