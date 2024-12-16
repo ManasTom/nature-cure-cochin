@@ -1,11 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDHWat27MvP7Oml5TSRVvejGXPFzT35S1I",
-    authDomain: "uploadcheck-d6971.firebaseapp.com",
-    databaseURL: "https://uploadcheck-d6971-default-rtdb.firebaseio.com",
-    projectId: "uploadcheck-d6971",
-    storageBucket: "uploadcheck-d6971.appspot.com",
-    messagingSenderId: "515282333943",
-    appId: "1:515282333943:web:b086b7d0e73fdb9e0c63f2"
+    apiKey: "AIzaSyAKfu0pHez3Eo29df1rDwJf54BtdUURHVw",
+    authDomain: "cardinal-padiyara.firebaseapp.com",
+    databaseURL: "https://cardinal-padiyara-default-rtdb.firebaseio.com",
+    projectId: "cardinal-padiyara",
+    storageBucket: "cardinal-padiyara.firebasestorage.app",
+    messagingSenderId: "865954742236",
+    appId: "1:865954742236:web:c2a6766b5bf25a81541919"
   };
   
   // Initialize Firebase

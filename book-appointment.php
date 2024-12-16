@@ -12,11 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $treatment = htmlspecialchars($_POST['treatment']);
 
     // Email configuration
-    $to = "manastom670@gmail.com"; // Replace with the recipient's email
+    $to = "cpadiyara@gmail.com"; // Replace with the recipient's email
     $subject = "New Appointment Booking Enquiry";
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8" . "\r\n";
-    $headers .= "From: " . ($email ? $email : "noreply@example.com") . "\r\n";
+    $headers .= "From: " . ($email ? $email : "noreply@cpadiyara.com") . "\r\n";
 
     // Email content
     $message = "
