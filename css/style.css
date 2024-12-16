@@ -1026,7 +1026,7 @@ body {
     text-align: left;
 }
 
-.footer_bottom_stripcol3{
+.footer_bottom_stripcol3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1052,6 +1052,12 @@ body {
         width: 100%;
         text-align: center;
         padding-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_col1 img {
+        width: 40%;
     }
 }
 
@@ -1181,7 +1187,8 @@ body {
     justify-content: center;
     overflow: hidden;
     width: 100%;
-    height: 30vh;
+    height: auto;
+    max-height: 30vh;
     border-radius: 8px;
 }
 
@@ -1209,11 +1216,25 @@ body {
     .treatment-cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .treatments_sec {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 }
 
 @media (max-width: 480px) {
     .treatment-cards-grid {
         grid-template-columns: 1fr;
+    }
+
+    .treatments_sec {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 }
 
@@ -1942,6 +1963,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.generic_thankyou h2{
+
+.generic_thankyou h2 {
     font-weight: 900;
 }
