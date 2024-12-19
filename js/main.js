@@ -76,12 +76,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 const increment = target / speed;
 
                 const updateCounter = () => {
-                    const currentValue = +counter.textContent;
+                    const currentValue = +counter.textContent.replace('+', '');
                     if (currentValue < target) {
-                        counter.textContent = Math.ceil(currentValue + increment);
+                        counter.textContent = `${Math.ceil(currentValue + increment)}+`;
                         setTimeout(updateCounter, 20);
                     } else {
-                        counter.textContent = target; // Ensure it stops at the target
+                        counter.textContent = `${target}+`; // Ensure it stops at the target
                     }
                 };
 
@@ -97,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     counters.forEach(counter => observer.observe(counter));
 });
+
 
 
 

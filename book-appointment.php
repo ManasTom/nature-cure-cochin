@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $date = htmlspecialchars($_POST['date']);
     $address = htmlspecialchars($_POST['address']);
     $visitedBefore = htmlspecialchars($_POST['visitedBefore']);
-    $treatment = htmlspecialchars($_POST['treatment']);
+    $comments = htmlspecialchars($_POST['comments']);
 
     // Email configuration
     $to = "cpadiyara@gmail.com"; // Replace with the recipient's email
@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 <p><strong>Appointment Date:</strong> $date</p>
                 <p><strong>Address:</strong> $address</p>
                 <p><strong>Visited Before:</strong> $visitedBefore</p>
-                <p><strong>Treatment Preference:</strong> $treatment</p>
+                <p><strong>Any comments:</strong> $comments</p>
             </div>
             <div class='footer'>
                 <p>&copy; 2024 Cardinal Padiyara Nature Cure Yogashram. All Rights Reserved.</p>

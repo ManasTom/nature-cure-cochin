@@ -1918,6 +1918,13 @@ body {
     margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+    .book_appointment {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
 
 
 

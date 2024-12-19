@@ -1,0 +1,29 @@
+User-agent: *
+Disallow: /css/
+Disallow: /database/
+Disallow: /img/
+Disallow: /js/
+Disallow: /.git/
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /siteSettings.php
+Disallow: /deleteTeamMember.php
+Disallow: /deleteTreatment.php
+Disallow: /deleteApprovedReview.php
+Disallow: /deleteGalleryImage.php
+Disallow: /approveReview.php
+Disallow: /uploadTeamMember.php
+Disallow: /uploadGalleryImages.php
+
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /gallery.html
+Allow: /book-appointment.html
+Allow: /treatments.html
+Allow: /privacy-policy.html
+Allow: /terms-and-conditions.html
+Allow: /thankyou.html
+Allow: /sitemap.xml
+
+Sitemap: https://naturecurecochin.org/sitemap.xml
